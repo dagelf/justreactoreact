@@ -1,0 +1,220 @@
+{
+  "generated_at_utc": "2026-03-08T22:27:03Z",
+  "tooling": {
+    "browser": "Chromium 145.0.7632.159 Arch Linux",
+    "server": "python3 -m http.server"
+  },
+  "summary": {
+    "passed_checks": 13,
+    "failed_checks": 0,
+    "total_checks": 13
+  },
+  "pages": {
+    "index.html": {
+      "size": {
+        "raw_bytes": 18424,
+        "raw_kib": 17.99,
+        "gzip_bytes": 4267,
+        "gzip_kib": 4.17
+      },
+      "navigation_ms": {
+        "response_start_ms": 1.5,
+        "dom_content_loaded_ms": 53.4,
+        "load_ms": 55.7,
+        "duration_ms": 55.7
+      },
+      "claims": [
+        {
+          "section": "modal",
+          "title": "Modal Dialog",
+          "label": "HTML: 5 lines | React: 41 lines + framer-motion",
+          "actual_html_lines": 5,
+          "actual_react_lines": 41,
+          "label_html_lines": 5,
+          "label_react_lines": 41,
+          "status": "pass"
+        },
+        {
+          "section": "darkmode",
+          "title": "Dark Mode Toggle",
+          "label": "HTML: 3 lines | React: 29 lines + Context + Provider + Hook",
+          "actual_html_lines": 3,
+          "actual_react_lines": 29,
+          "label_html_lines": 3,
+          "label_react_lines": 29,
+          "status": "pass"
+        },
+        {
+          "section": "form",
+          "title": "Form Validation",
+          "label": "HTML: 5 lines, built-in | React: 23 lines + react-hook-form + yup + resolver",
+          "actual_html_lines": 5,
+          "actual_react_lines": 23,
+          "label_html_lines": 5,
+          "label_react_lines": 23,
+          "status": "pass"
+        },
+        {
+          "section": "accordion",
+          "title": "Accordion/Collapsible",
+          "label": "HTML: 4 lines | React: 24 lines + state management + event handlers",
+          "actual_html_lines": 4,
+          "actual_react_lines": 24,
+          "label_html_lines": 4,
+          "label_react_lines": 24,
+          "status": "pass"
+        }
+      ],
+      "claim_summary": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4
+      },
+      "functionality_checks": [
+        {
+          "name": "react_code_toggles",
+          "status": "pass",
+          "details": {
+            "sections": [
+              {
+                "section": "modal",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              },
+              {
+                "section": "darkmode",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              },
+              {
+                "section": "form",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              },
+              {
+                "section": "accordion",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "native_dialog_open_close",
+          "status": "pass",
+          "details": {
+            "after_open": true,
+            "after_close": false
+          }
+        },
+        {
+          "name": "native_form_validation",
+          "status": "pass",
+          "details": {
+            "blank_valid": false,
+            "filled_valid": true
+          }
+        },
+        {
+          "name": "native_accordion_toggle",
+          "status": "pass",
+          "details": {
+            "before": false,
+            "after_open": true,
+            "after_close": false
+          }
+        },
+        {
+          "name": "dark_mode_toggle",
+          "status": "pass",
+          "details": {
+            "before": false,
+            "after_toggle": true,
+            "after_reset": false
+          }
+        }
+      ],
+      "functionality_summary": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5
+      }
+    },
+    "multiuser-postgres.html": {
+      "size": {
+        "raw_bytes": 29376,
+        "raw_kib": 28.69,
+        "gzip_bytes": 7416,
+        "gzip_kib": 7.24
+      },
+      "navigation_ms": {
+        "response_start_ms": 1.6,
+        "dom_content_loaded_ms": 8.6,
+        "load_ms": 10,
+        "duration_ms": 10
+      },
+      "functionality_checks": [
+        {
+          "name": "react_code_toggles",
+          "status": "pass",
+          "details": {
+            "sections": [
+              {
+                "section": "users",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              },
+              {
+                "section": "chat",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              },
+              {
+                "section": "analytics",
+                "before": false,
+                "after_open": true,
+                "after_close": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "simulate_db_query",
+          "status": "pass",
+          "details": {
+            "ok": true,
+            "value": "38ms"
+          }
+        },
+        {
+          "name": "simulate_react_updates",
+          "status": "pass",
+          "details": {
+            "ok": true,
+            "value": "630ms"
+          }
+        },
+        {
+          "name": "measure_bundle_impact",
+          "status": "pass",
+          "details": {
+            "ok": true,
+            "pg": "187ms",
+            "react": "3.2s"
+          }
+        }
+      ],
+      "functionality_summary": {
+        "passed": 4,
+        "failed": 0,
+        "total": 4
+      }
+    }
+  }
+}
